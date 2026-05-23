@@ -1,4 +1,5 @@
-# Mnemosyne Cognitive Memory Layer
+# Cognitive Memory Layer
+<img width="1887" height="821" alt="Screenshot 2026-05-24 003707" src="https://github.com/user-attachments/assets/64b99494-a28c-493b-aa21-f46629e1fe6a" />
 
 AI-powered cognitive memory system that extracts and stores structured memories from user interactions. Features a FastAPI backend with LLM integration via OpenRouter for intelligent memory extraction, and a modern React frontend with Material-UI components for a seamless user experience.
 

@@ -8,7 +8,7 @@ settings = get_settings()
 
 # Create FastAPI application
 app = FastAPI(
-    title="Cognitive Memory API",
+    title="COG-6 Cognitive Memory API",
     description="Backend service for extracting and storing cognitive memories",
     version="1.0.0"
 )
@@ -30,9 +30,9 @@ app.include_router(memory.router)
 async def startup_event():
     """Initialize database on startup"""
     init_db()
-    print("✅ Database initialized")
-    print(f"✅ API Key configured: {settings.openrouter_api_key[:20]}...")
-    print(f"✅ Using model: {settings.openrouter_model}")
+    print("[INFO] Database initialized")
+    print(f"[INFO] API Key configured: {settings.openrouter_api_key[:20]}...")
+    print(f"[INFO] Using model: {settings.openrouter_model}")
 
 
 @app.get("/api/health")
@@ -49,7 +49,7 @@ async def health_check():
 async def root():
     """Root endpoint"""
     return {
-        "message": "Cognitive Memory API",
+        "message": "COG-6 Cognitive Memory API",
         "docs": "/docs",
         "health": "/api/health"
     }

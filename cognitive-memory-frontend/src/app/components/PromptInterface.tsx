@@ -285,7 +285,7 @@ export const PromptInterface = () => {
               <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
               <img
                 src="/logo.png"
-                alt="Mnemosyne Logo"
+                alt="COG-6 Logo"
                 className="w-full h-full object-cover drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]"
               />
             </motion.div>
@@ -293,7 +293,7 @@ export const PromptInterface = () => {
             {/* Title */}
             <div className="text-center space-y-3">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-['Playfair_Display'] text-white tracking-tight">
-                MNEMOSYNE
+                COG-6
               </h1>
               <p className="text-lg md:text-xl text-zinc-400 tracking-[0.2em] uppercase font-light">
                 Universal Cognitive Memory Runtime
@@ -316,7 +316,7 @@ export const PromptInterface = () => {
             {/* MNEMOSYNE Header */}
             <div className="text-center space-y-2">
               <p className="text-sm tracking-[0.3em] text-zinc-500 uppercase font-light">
-                MNEMOSYNE Universal Cognitive Memory Runtime
+                COG-6 Universal Cognitive Memory Runtime
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-center leading-tight font-['Playfair_Display'] text-zinc-100 tracking-tight">
                 Experience <span className="italic">Specialized</span> Intelligence
@@ -378,7 +378,7 @@ export const PromptInterface = () => {
                     value={prompt}
                     onChange={(e) => setPrompt(e.target.value)}
                     disabled={status !== 'idle'}
-                    placeholder=" CATCH  A  CHAT  WITH  MNEMOSYNE  HERE !"
+                    placeholder=" CATCH  A  CHAT  WITH  COG-6  HERE !"
                     className={`w-full min-h-[160px] p-8 bg-transparent text-lg text-center resize-none outline-none placeholder:text-zinc-600/50 font-['Playfair_Display'] font-bold tracking-wide transition-opacity duration-500 ${status !== 'idle' && status !== 'completed' ? 'opacity-40' : 'opacity-100'
                       }`}
                     onKeyDown={(e) => {
